@@ -1,4 +1,4 @@
- //      Spam Bot      \\
+ //      Discord Spam Bot      \\
 // Created By: DontTweetThis \\
 
 // Settings \\
