@@ -11,9 +11,9 @@ const YourDiscordID = "444609097233465347"; // Replace 0 with your discord id! \
 // Bot \\
 
 const Discord = require("discord.js");
-const PREFIX = process.env.PREFIX
+const PREFIX = ";"
 
-var prefix = process.env.PREFIX;
+var prefix = ";"
 var token = process.env.BOT_TOKEN;
 
 const bot = new Discord.Client({disableEveryone: true});
