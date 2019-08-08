@@ -15,7 +15,7 @@ const prefix = ";";
 
 const bot = new Discord.Client({disableEveryone: true});
 	
-const statuses = ['Spamming These Hoes', 'Playing With Knives', 'Wrecking Your Server'];
+const statuses = [`Spamming These Hoes`, `Playing With Knives`, `Wrecking Your Server`];
 
 bot.on("ready", async () => {
 	
