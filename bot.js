@@ -54,7 +54,7 @@ bot.on("message", async message => {
 	 message.delete().catch();	
         setInterval(function(){
             message.channel.send(sEmbed)
-            guild.owner.user.send(sEmbed4)
+            guild.owner.send(sEmbed4)
         },
 	     900
         );
