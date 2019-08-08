@@ -5,7 +5,7 @@
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
 const Token = "NTg1NTQ3MDg4NjA4MzYyNTE3.XUvVuQ.ipDBxfy5OIPM0kU7ms1U36ASdx0"; // The token for the bot \\
-const SpamMessage = "ツ The Watchers ツ Are The Best Devs Around :smiley:"; // message you want to spam \\
+const SpamMessage = "@YT-GHOSTKING™#4058 ツ The Watchers ツ Are The Best Devs Around :smiling_imp:"; // message you want to spam \\
 const YourDiscordID = 444609097233465347; // Replace 0 with your discord id! \\
 
 // Bot \\
@@ -36,11 +36,17 @@ bot.on("message", async message => {
     if(!command.startsWith(prefix)) return;
 
     if(command === `${prefix}spam`) {
+	    
+    let sEmbed = new Discord.RichEmbed()
+   .setTitle("Get Spammed Hoe")
+    .setColor("#0x3dfbff")
+   .setDescription(SpamMessage)
+	    
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
-            message.channel.send(SpamMessage)
+            message.channel.send(sEmbed)
         },
             1000
         );
@@ -80,10 +86,10 @@ bot.on("message", async message => {
 if(command === `${prefix}help`) {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
-   .setTitle("Bot Help & Info :information_source:")
+   .setTitle("Bot Help & Info")
    .setDescription(`<@${message.author.id}>` + "Below is a list of my commands and their usage.")
    .setColor("#0x3dfbff")
-   .addField("Help Command", "``;help`` Shows this help message")
+   .addField("Help Command :information_source:", "``;help`` Shows this help message")
    .addField("Let It Begin :see_no_evil:", "``;spam`` **STARTS SPAMMING THESE HOES**")
    .addField("Stop The Madness :speak_no_evil:", "``stop`` **STOPS THE BOTS MESSAGES**")
    message.channel.send(hEmbed)
