@@ -16,7 +16,7 @@ const prefix = ";";
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
-    bot.user.setGame(`;help in ${client.guilds.size} Servers`, `https://twitch.tv/monstercat`)
+    bot.user.setGame(`;help in ${bot.guilds.size} Servers`, `https://twitch.tv/monstercat`)
 
     console.log(`${BotName} Loaded!`);
 
