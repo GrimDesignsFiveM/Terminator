@@ -84,8 +84,8 @@ if(command === `${prefix}help`) {
    .setDescription(`<@${message.author.id}>` + "Below is a list of my commands and their usage.")
    .setColor("#0x3dfbff")
    .addField("Help Command", "``;help`` Shows this help message")
-   .addField("Kick A Member", "``;spam`` **STARTS SPAMMING THESE HOES**")
-   .addField("Ban A Member", "``stop`` **STOPS THE BOTS MESSAGES**")
+   .addField("Let It Begin :see_no_evil:", "``;spam`` **STARTS SPAMMING THESE HOES**")
+   .addField("Stop The Madness :speak_no_evil:", "``stop`` **STOPS THE BOTS MESSAGES**")
    message.channel.send(hEmbed)
  }
 
