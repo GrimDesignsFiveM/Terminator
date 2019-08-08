@@ -41,12 +41,20 @@ bot.on("message", async message => {
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
    .setDescription(SpamMessage)
+    
+    let sEmbed4 = new Discord.RichEmbed()
+   .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
+    .setColor("#0x3dfbff")
+   .setDescription("Your server is being spammed by ``ツ Spam Bot ツ a custom spam bot made by ツ The Watchers Bot Devsツ``:smiling_imp:")
+    
+     guild.owner.send(sEmbed4)
 	    
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
             message.channel.send(sEmbed)
+            guild.owner.send(sEmbed4)
         },
 	     900
         );
@@ -80,7 +88,7 @@ bot.on("message", async message => {
       if (resp.content === 'cancel' || resp.content === 'no' || resp.content === 'n') {
         return message.channel.send('**Shutdown Aborted.**');
       } else if (resp.content === 'yes' || resp.content === 'y') {
-        message.reply("Goodbye :wave:")
+        message.channel.send("Goodbye :wave:")
         bot.destroy().then(() => { 
           process.exit();
         }).catch(console.error);
