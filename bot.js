@@ -89,6 +89,7 @@ bot.on("message", async message => {
         return message.channel.send('**Shutdown Aborted.**');
       } else if (resp.content === 'yes' || resp.content === 'y') {
         message.channel.send("Goodbye :wave:")
+        message.delete().catch();	
         bot.destroy().then(() => { 
           process.exit();
         }).catch(console.error);
