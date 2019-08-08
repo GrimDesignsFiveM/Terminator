@@ -55,16 +55,23 @@ bot.on("message", async message => {
 	if(command === `${prefix}stop`) {
 		
 	let sEmbed2 = new Discord.RichEmbed()
-   .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
+   .setTitle("How To Stop The Spam :speak_no_evil:")
     .setColor("#0x3dfbff")
    .setDescription('Are you sure you want to shut me down?\n\nReply with \`cancel\` to **abort** the shutdown. The shutdown will self-abort in 30 seconds.')
    .addField("How To Stop The Bot", "Reply with ``yes``, ``y`` for Yes or ``no``, ``n`` for No")  
+	
+	let sEmbed3 = new Discord.RichEmbed()
+   .setTitle("How To Stop The Spam :speak_no_evil:")
+    .setColor("#0x3dfbff")
+   .setDescription(`@${message.author.id}>` + "Reply with ``yes`` or ``no`` if you need more help check your DMs this process will expire in ``60 seconds``")
    
-  message.channel.send(sEmbed2);
+   
+  message.channel.send(sEmbed3)
+ message.author.send(sEmbed2);
   return message.channel.awaitMessages(m => m.author.id === message.author.id, {
     'errors': ['time'],
     'max': 1,
-    time: 30000
+    time: 60000
   }).then(resp => {
     if (!resp) return;
     resp = resp.array()[0];
