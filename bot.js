@@ -28,7 +28,6 @@ bot.on("ready", async () => {
 	bot.user.setPresence({ activity: {name: status}, status: 'online' });
 	
 	}, 10000)
-})
 
     console.log(`${BotName} Loaded!`);
 
