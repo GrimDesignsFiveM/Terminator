@@ -14,9 +14,21 @@ const Discord = require("discord.js");
 const prefix = ";";
 
 const bot = new Discord.Client({disableEveryone: true});
+	
+let statuses = ['Spamming These Hoes', 'Playing With Knives', 'Wrecking Your Server'];
 
 bot.on("ready", async () => {
-    bot.user.setGame("Spamming These Hoes", "https://twitch.tv/")
+	
+	setInterval(function(){
+		
+		let status = statuses[Math.floor(Math.random()*statuses.length)];
+		
+    //bot.user.setPresence(({ game: {name: status}, status: 'online' });
+	
+	bot.user.setPresence(({ activity: {name: status}, status: 'online' });
+	
+	}, 10000)
+})
 
     console.log(`${BotName} Loaded!`);
 
@@ -38,6 +50,7 @@ bot.on("message", async message => {
     if(command === `${prefix}spam`) {
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
+	 message.delete().catch();	
         setInterval(function(){
             message.channel.send(SpamMessage)
         },
@@ -45,7 +58,7 @@ bot.on("message", async message => {
         );
     };
 	
-	if(command === `${prefix}shutdown`) {
+	if(command === `${prefix}stop`) {
 	if (message.author.id !== "444609097233465347") return message.reply('You do not have the permission to use this command!');
 
   message.channel.send('Are you sure you want to shut me down?\n\nReply with \`cancel\` to **abort** the shutdown. The shutdown will self-abort in 30 seconds.');
@@ -72,32 +85,22 @@ bot.on("message", async message => {
   }).catch(() => {
     console.error;
     message.channel.send('Shutdown timed out.');
+  message.delete().catch();	
   });
 };
+	
+if(command === "help") {
+  message.delete().catch();	 
+   let hEmbed = new Discord.RichEmbed()
+   .setTitle("Bot Help & Info :information_source:")
+   .setDescription(`<@${message.author.id}>` + "Below is a list of my commands and their usage.")
+   .setColor("#0x3dfbff")
+   .addField("Help Command", "``;help`` Shows this help message")
+   .addField("Kick A Member", "``;spam`` **STARTS SPAMMING THESE HOES**")
+   .addField("Ban A Member", "``stop`` **STOPS THE BOTS MESSAGES**")
+   message.channel.send(hEmbed)
+ }
 
-  if(command === `${prefix}reload`) {
-  if (message.author.id !== '444609097233465347') return message.reply('You do not have the permission to use this command!');
-  let command;
-  if (bot.commands.has(args[0])) {
-    command = args[0];
-  } else if (bot.aliases.has(args[0])) {
-    command = bot.aliases.get(args[0]);
-  }
-  if (!command) {
-    return message.channel.send(`I cannot find the command: ${args[0]}`);
-  } else {
-    message.channel.send(`Reloading: ${command}`)
-      .then(m => {
-        bot.reload(command)
-          .then(() => {
-            m.edit(`Successfully reloaded: ${command}`);
-          })
-          .catch(e => {
-            m.edit(`Command reload failed: ${command}\n\`\`\`${e.stack}\`\`\``);
-          });
-      });
-  }
-};
 
 });
 
