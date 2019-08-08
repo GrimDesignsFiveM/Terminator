@@ -16,7 +16,7 @@ const prefix = ";";
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
-    bot.user.setActivity(`Playing With Knives`, `https://twitch.tv/monstercat`)
+    bot.user.setGame(`;help in ${client.guilds.size} Servers`, `https://twitch.tv/monstercat`)
 
     console.log(`${BotName} Loaded!`);
 
@@ -77,7 +77,7 @@ bot.on("message", async message => {
   });
 };
 	
-if(command === "help") {
+if(command === `${prefix}help`) {
   message.delete().catch();	 
    let hEmbed = new Discord.RichEmbed()
    .setTitle("Bot Help & Info :information_source:")
