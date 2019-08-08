@@ -53,9 +53,14 @@ bot.on("message", async message => {
     };
 	
 	if(command === `${prefix}stop`) {
-	if (message.author.id !== "444609097233465347") return message.reply('You do not have the permission to use this command!');
-
-  message.channel.send('Are you sure you want to shut me down?\n\nReply with \`cancel\` to **abort** the shutdown. The shutdown will self-abort in 30 seconds.');
+		
+	let sEmbed2 = new Discord.RichEmbed()
+   .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
+    .setColor("#0x3dfbff")
+   .setDescription('Are you sure you want to shut me down?\n\nReply with \`cancel\` to **abort** the shutdown. The shutdown will self-abort in 30 seconds.')
+   .addField("How To Stop The Bot", "Reply with ``yes``, ``y`` for Yes or ``no``, ``n`` for No")  
+   
+  message.channel.send(sEmbed2);
   return message.channel.awaitMessages(m => m.author.id === message.author.id, {
     'errors': ['time'],
     'max': 1,
