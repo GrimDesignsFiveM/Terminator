@@ -61,7 +61,7 @@ bot.on("message", async message => {
     };
 	
 	if(command === `${prefix}stop`) {
-		
+	message.delete().catch();	
 	let sEmbed2 = new Discord.RichEmbed()
    .setTitle("How To Stop The Spam :speak_no_evil:")
     .setColor("#0x3dfbff")
