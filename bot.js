@@ -16,7 +16,7 @@ const prefix = ";";
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
-    bot.user.setGame(`Playing With Knives`, `Spamming These Hoes`, `https://twitch.tv/monstercat`)
+    bot.user.setGame(`Playing With Knives`, `Spamming These Hoes`, `https://twitch.tv/monstercat`);
 
     console.log(`${BotName} Loaded!`);
 
