@@ -48,7 +48,7 @@ bot.on("message", async message => {
         setInterval(function(){
             message.channel.send(sEmbed)
         },
-	     5000
+	     900
         );
     };
 	
