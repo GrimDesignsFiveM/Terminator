@@ -112,7 +112,7 @@ if(command === `${prefix}help`) {
    .setColor("#0x3dfbff")
    .addField("Help Command :information_source:", "``;help`` Shows this help message")
    .addField("Let It Begin :see_no_evil:", "``;spam`` **STARTS SPAMMING THESE HOES**")
-   .addField("Stop The Madness :speak_no_evil:", "``stop`` **STOPS THE BOTS MESSAGES**")
+   .addField("Stop The Madness :speak_no_evil:", "``;stop`` **STOPS THE BOTS MESSAGES**")
    message.channel.send(hEmbed)
  }
 
