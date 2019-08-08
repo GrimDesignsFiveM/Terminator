@@ -1,15 +1,12 @@
 {
-  "name": "Ticket Bot",
-  "description": "Example Bot For Discord, Using Discord.js Library.",
+  "name": "Spam Bot",
+  "description": "Sue Me Discord",
   "keywords": [
     "node",
     "heroku",
     "discord"
-  ],
-  "website": "https://small-sharp-tool.com/",
-  "repository": "https://github.com/GrimDesignsFiveM/discord.js-example-bot",
-  "logo": "https://discord.js.org/static/logo-square.png",
-  "success_url": "/welcome",
+	"spam"
+    }
   },
   "buildpacks": [
     {
