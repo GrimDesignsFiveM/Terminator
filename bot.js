@@ -42,19 +42,19 @@ bot.on("message", async message => {
     .setColor("#0x3dfbff")
    .setDescription(SpamMessage)
     
+ bot.on("guildCreate", (guild) => {
+    
     let sEmbed4 = new Discord.RichEmbed()
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
    .setDescription("Your server is being spammed by ``ツ Spam Bot ツ a custom spam bot made by ツ The Watchers Bot Devsツ``:smiling_imp:")
-    
-     guild.owner.send(sEmbed4)
 	    
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
             message.channel.send(sEmbed)
-            message.guild.owner.send(sEmbed4)
+            guild.owner.user.send(sEmbed4)
         },
 	     900
         );
