@@ -14,20 +14,9 @@ const Discord = require("discord.js");
 const prefix = ";";
 
 const bot = new Discord.Client({disableEveryone: true});
-	
-const statuses = [`Spamming These Hoes`, `Playing With Knives`, `Wrecking Your Server`];
 
 bot.on("ready", async () => {
-	
-	setInterval(function(){
-		
-		const status = statuses[Math.floor(Math.random()*statuses.length)];
-		
-    //bot.user.setPresence({ game: {name: status}, status: 'online' });
-	
-	bot.user.setPresence({ activity: {name: status}, status: 'online' });
-	
-	}, 10000)
+    bot.user.setGame(`Spamming These Hoes`, `https://twitch.tv/`)
 
     console.log(`${BotName} Loaded!`);
 
