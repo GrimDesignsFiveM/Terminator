@@ -4,7 +4,7 @@
 // Settings \\
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
-const Token = "NTg1NTQ3MDg4NjA4MzYyNTE3.XPbWGw.47heiUnPVT-ogeOkfYHgAT4bln8"; // The token for the bot \\
+const Token = "NTg1NTQ3MDg4NjA4MzYyNTE3.XUvVuQ.ipDBxfy5OIPM0kU7ms1U36ASdx0"; // The token for the bot \\
 const SpamMessage = "ツ The Watchers ツ Are The Best Devs Around :smiley:"; // message you want to spam \\
 const YourDiscordID = 444609097233465347; // Replace 0 with your discord id! \\
 
