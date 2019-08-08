@@ -47,7 +47,7 @@ bot.on("message", async message => {
     let sEmbed4 = new Discord.RichEmbed()
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
-   .setDescription("Your server is being spammed by ``ツ Spam Bot ツ a custom spam bot made by ツ The Watchers Bot Devsツ``:smiling_imp:")
+   .setDescription("Your server is being spammed by ``ツ Spam Bot ツ`` a custom spam bot made by ``ツ The Watchers Bot Devsツ`` :smiling_imp:")
 	    
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
