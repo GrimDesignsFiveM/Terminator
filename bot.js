@@ -42,6 +42,8 @@ bot.on("message", async message => {
     .setColor("#0x3dfbff")
    .setDescription(SpamMessage)
     
+  const guild = bot.guilds.get(message.guild.id).id;
+    
     let sEmbed4 = new Discord.RichEmbed()
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
