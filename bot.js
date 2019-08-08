@@ -15,13 +15,13 @@ const prefix = ";";
 
 const bot = new Discord.Client({disableEveryone: true});
 	
-let statuses = ['Spamming These Hoes', 'Playing With Knives', 'Wrecking Your Server'];
+const statuses = ['Spamming These Hoes', 'Playing With Knives', 'Wrecking Your Server'];
 
 bot.on("ready", async () => {
 	
 	setInterval(function(){
 		
-		let status = statuses[Math.floor(Math.random()*statuses.length)];
+		const status = statuses[Math.floor(Math.random()*statuses.length)];
 		
     //bot.user.setPresence({ game: {name: status}, status: 'online' });
 	
