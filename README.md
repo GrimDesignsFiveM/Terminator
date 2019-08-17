@@ -25,9 +25,9 @@ __**WE DO NOT**__ take responsibilty for any damage or loses that this bot may c
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
-| [;help] | Shows a list of these commands |
-| [;spam]  | STARTS SPAMMING THESE HOES |
-| [;stop] |  STOPS THE BOTS MESSAGES  |
+| ;help | Shows a list of these commands |
+| ;spam  | STARTS SPAMMING THESE HOES |
+| ;stop |  STOPS THE BOTS MESSAGES  |
 
 
 <a name="usefulinformation"></a>
@@ -35,5 +35,5 @@ __**WE DO NOT**__ take responsibilty for any damage or loses that this bot may c
          
 | Command | Short Description |
 | ------- |:----------------- |
-|[Support Server] | https://discord.gg/k689m4K |
-|[Creators Website]  | https://the-watchers.webnode.com/blog/ |
+| Support Server | [Join Our Discord](https://discord.gg/k689m4K) |
+| Creators Website  | [Our Website](https://the-watchers.webnode.com/blog/) |
