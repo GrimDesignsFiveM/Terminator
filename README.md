@@ -7,7 +7,7 @@ Every discord servers worst enemy.
 
 ##  About ツ Terminator ツ
 
-ツ STerminator ツ Is a discord bot written in ``discord.js`` made to spam servers
+ツ Terminator ツ Is a discord bot written in ``discord.js`` made to spam servers
 
 ツ Terminator ツ Spams the given message in the channel that the command is used in as well
 as DM spams the server owner.
