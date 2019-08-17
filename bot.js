@@ -4,7 +4,7 @@
 // Settings \\
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
-const Token = "NTg1NTQ3MDg4NjA4MzYyNTE3.XUvVuQ.ipDBxfy5OIPM0kU7ms1U36ASdx0"; // The token for the bot \\
+const Token = process.env.BOT_TOKEN // Replace with "(`tokenhere`) if self hosting
 const SpamMessage = "ツ The Watchers ツ Are The Best Devs Around :smiling_imp:"; // message you want to spam \\
 const YourDiscordID = 444609097233465347; // Replace 0 with your discord id! \\
 
@@ -113,10 +113,11 @@ if(command === `${prefix}help`) {
    .addField("Help Command :information_source:", "``;help`` Shows this help message")
    .addField("Let It Begin :see_no_evil:", "``;spam`` **STARTS SPAMMING THESE HOES**")
    .addField("Stop The Madness :speak_no_evil:", "``;stop`` **STOPS THE BOTS MESSAGES**")
+   .addField("Support Server", "[Join Our Server](https://discordapp.com/invite/gde8qb")
    message.channel.send(hEmbed)
  }
 
 
 });
 
-bot.login(Token);
+bot.login(process.env.BOT_TOKEN);
