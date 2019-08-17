@@ -21,7 +21,7 @@ __**WE DO NOT**__ take responsibilty for any damage or loses that this bot may c
 - [Useful Information](#usefulinformation)
 
 <a name="help"></a>
-## Help Command
+## Commands List
 
 | Command           | Short Description      |
 | ----------------- |:---------------------- |
