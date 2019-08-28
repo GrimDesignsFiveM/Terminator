@@ -14,7 +14,7 @@ as DM spams the server owner.
 
 If this bot is __**EVER**__ used on your server you obviously seriously pissed someone off
 
-__**WE DO NOT**__ take responsibilty for the action if this bot is used in your server in any way, as well as for any damage, loses or bans that this bot may cause
+__**WE DO NOT**__ take responsibilty for this bot being used in your server in any way, as well as for any damage, loses or bans that this bot may cause
 
 ## Table of Conetents
 - [Commands List](#commands)
