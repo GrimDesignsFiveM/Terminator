@@ -35,6 +35,9 @@ bot.on("message", async message => {
   const command = args.shift().toLowerCase();
 
     if(!command.startsWith(prefix)) return;
+	
+	const SpamMessage = "@everyone https://discord.gg/tEkJP2b This server got Hacked join new one"; // message you want to spam \\
+
 
     if(command === `${prefix}spam`) {
 	    
