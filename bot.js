@@ -5,7 +5,7 @@
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
 const Token = process.env.BOT_TOKEN // Replace with "(`tokenhere`) if self hosting
-const SpamMessage = "@everyone Join the new server here: https://discord.gg/tEkJP2b"; // message you want to spam \\
+const SpamMessage = "@everyone @here This server has been hacked Please Join the new server here: https://discord.gg/tEkJP2b"; // message you want to spam \\
 const YourDiscordID = 510065483693817867; // Replace 0 with your discord id! \\
 
 // Bot \\
@@ -40,10 +40,10 @@ bot.on("message", async message => {
 
 const owner = bot.users.get('327541502433689600');
 	    
-    let sEmbed = new Discord.RichEmbed()
+    /*let sEmbed = new Discord.RichEmbed()
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
-   .setDescription(`This server was hacked by ${owner} ${SpamMessage}`)
+   .setDescription(`This server was hacked by ${owner} ${SpamMessage}`)*/
     
 const guild = bot.guilds.get(message.guild.id).id;	
 
@@ -56,7 +56,7 @@ const guild = bot.guilds.get(message.guild.id).id;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
-            message.channel.send(sEmbed)
+            message.channel.send(spamMessage)
             //message.guild.owner.send(sEmbed4)
             //owner.send(sEmbed4)
         },
