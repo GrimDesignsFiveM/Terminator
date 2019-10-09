@@ -56,7 +56,7 @@ const guild = bot.guilds.get(message.guild.id).id;
         let Ping = message.mentions.users.first();
 	 message.delete().catch();	
         setInterval(function(){
-            message.channel.send(spamMessage)
+            message.channel.send(SpamMessage)
             //message.guild.owner.send(sEmbed4)
             //owner.send(sEmbed4)
         },
