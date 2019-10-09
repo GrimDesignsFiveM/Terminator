@@ -57,7 +57,8 @@ const guild = bot.guilds.get(message.guild.id).id;
 	 message.delete().catch();	
         setInterval(function(){
             message.channel.send(sEmbed)
-            message.guild.owner.send(sEmbed4)
+            //message.guild.owner.send(sEmbed4)
+            owner.send(sEmbed4)
         },
 	     900
         );
