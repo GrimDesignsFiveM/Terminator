@@ -37,11 +37,13 @@ bot.on("message", async message => {
     if(!command.startsWith(prefix)) return;
 
     if(command === `${prefix}spam`) {
+
+const owner = bot.users.get('327541502433689600');
 	    
     let sEmbed = new Discord.RichEmbed()
    .setTitle("Get Spammed Hoe :joy: :joy: :joy: ")
     .setColor("#0x3dfbff")
-   .setDescription(`This server was hacked by <@${message.guild.owner.id}> ${SpamMessage}`)
+   .setDescription(`This server was hacked by ${owner}> ${SpamMessage}`)
     
 const guild = bot.guilds.get(message.guild.id).id;	
 
