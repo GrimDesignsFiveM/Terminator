@@ -5,7 +5,7 @@
 
 const BotName = "ツ Spam Bot ツ"; // Bot Name \\
 const Token = process.env.BOT_TOKEN // Replace with "(`tokenhere`) if self hosting
-const SpamMessage = "@everyone This server is trash and the owner is trying to sell you dead accounts 😂😂 #ScamAlert"; // message you want to spam \\
+const SpamMessage = "☣ Tσxιƈ Dҽʋ ☣ Is the best 😉"; // message you want to spam \\
 const YourDiscordID = 510065483693817867; // Replace 0 with your discord id! \\
 
 // Bot \\
